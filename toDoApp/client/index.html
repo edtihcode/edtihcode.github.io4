@@ -33,14 +33,14 @@
   </div>
   <script>
     $(document).ready(()=>{
-      $.post("http://localhost:3000/readNotes",{} ,(response)=>{
+      $.post("https://edtihcode.github.io/toDoApp/client/readNotes",{} ,(response)=>{
           console.log(response);
           let notesArray = response.notes;
 
           for (var i = 0; i < notesArray.length; i++) {
             let currentNote = notesArray[i]
             let listItem= `<li data-id="${currentNote._id}">
-                                ${currentNote.title},<a href="http://localhost:3000/edit-note.html?id=${currentNote._id}"><button>Edit Note</button></a><button class="Delete">Delete</button> <br>
+                                ${currentNote.title},<a href="https://edtihcode.github.io/toDoApp/client/edit-note.html?id=${currentNote._id}"><button>Edit Note</button></a><button class="Delete">Delete</button> <br>
                                 ${currentNote.description},
                                 ${currentNote.dueDate},
                                 ${currentNote.priority},
@@ -61,7 +61,7 @@
               console.log($(this).parent().parent());
               let idToDelete = {_id : $(this).parent().attr("data-id")};
 
-              $.post("http://localhost:3000/deleteNote", idToDelete, (response)=> {
+              $.post("https://edtihcode.github.io/toDoApp/client/deleteNote", idToDelete, (response)=> {
                 if (response !=500) {
                   $(this).parent().remove();
                 }

@@ -31,7 +31,7 @@
 
       if (searchParams.has("id")) {
         $("#create-note").html("Save Changes");
-        $.post("http://localhost:3000/readNotes", {},(response)=>{
+        $.post("edtihcode.github.iuo/toDoApp/client/readNotes", {},(response)=>{
           let notesArray = response.notes;
           let matchedNote;
           for (let i = 0; i < notesArray.length; i++) {
@@ -57,10 +57,10 @@
                 status: true
             };
 
-            $.post("https://edtihcode.github.io/toDoApp/Client/updateNote", updatedNote,()=>{
+            $.post("https://edtihcode.github.io/toDoApp/client/updateNote", updatedNote,()=>{
               $("body").append("<p>Your note was saved!</p>");
             });
-            window.setTimeout(()=>{window.location = "http://localhost:3000/"},1000);
+            window.setTimeout(()=>{window.location = "https://edtihcode.github.io/toDoApp/client"},1000);
           });
         });
 
@@ -77,11 +77,11 @@
               status: true
           };
 
-          $.post("http://localhost:3000/createNote",newNote, (response)=>{
+          $.post("https://edtihcode.github.io/toDoApp/client/createNote",newNote, (response)=>{
             //addpend the data from the backend when you receive a responde
             $("body").append('<p>Your note was saved!</p>');
           });
-            window.setTimeout(()=>{window.location = "http://localhost:3000/"},1000);//window.location brings it to a new url when the scope runs
+            window.setTimeout(()=>{window.location = "https://edtihcode.github.io/toDoApp/client/"},1000);//window.location brings it to a new url when the scope runs
             //window.setTimeout(function, milliseconds); sets a delay timer to execute after certain time
         });
 
