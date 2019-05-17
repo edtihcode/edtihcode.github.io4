@@ -1,0 +1,5 @@
+body {
+  background-image: url(pic/1.png);
+  /* background: url(styles/pic/1.png); */
+  background-size: cover;
+}

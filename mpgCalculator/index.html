@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Cheaper gas station savings calculator </title>
+  <meta name="description" content="Topic">
+  <meta name="author" content=" Ed">
+  <link rel="stylesheet" href="css/reset.css?v=1.0">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!--for IE 9 insert the code bellow : -->
+  <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <![endif]-->
+
+
+</head>
+
+<body>
+  <nav>
+     <ul>
+       <li><a id= logo href="../index.html"> Portfolio</a></li>
+       <li><a id= logo href="../about-me/Ed_about_me.html"> About-me</a></li>
+       <li><a id= logo href="../Gallery/index.html"> Gallery</a></li>
+       <li><a id= logo href="index.html"> Calculator</a></li>
+     </ul>
+  </nav>
+  <div class="anim-object active" id="box-object-light" style="animation: color-change-2x 2s linear 0s infinite alternate both running;">
+<h1>Cheaper Gas Station Savings Calculator CGSSC<sup>®</sup> <h1>
+<p2>Ever been in a situation where you are not sure if it's worth the trip to a cheaper gas station but it's further away? This calculator will help you compare which gas sation is the better option to save money based on your current location and vehicle that you drive.</p2>
+</div>
+  <div class="input">
+    <div class="anim-object active" id="box-object-light" style="animation: color-change-2x 2s linear 0s infinite alternate both running;">
+      <form>
+        <p>Price of gas you bought $/gallon
+          <input type="text" id="gasPrice" placeholder="gas price per gallon"> </p>
+        <p>Amount of gas used from the last full refill
+          <input type="text" id="gallon" placeholder="gallon"> </p>
+        <p>Distance travelled from the last full refill
+          <input type="text" id="miles" placeholder="miles"> </p>
+
+      </form>
+
+      <button type="button" id="submit">Calculate Your Car Mileage</button>
+      <br>
+    </div>
+  </div>
+  <div class="input" class="anim-object active" id="box-object-light" style="animation: color-change-2x 2s linear 0s infinite alternate both running;">
+    <p>MPG =
+      <input type="text" id="result1" placeholder="miles"> </p>
+    <p>Cost per mile =
+      <input type="text" id="result2" placeholder="miles"> </p>
+    <p>Range per dollar =
+      <input type="text" id="result3" placeholder="range"> </p>
+
+  </div>
+  <br>
+  <div>
+    <div class="input2" class="anim-object active" id="box-object-light" style="animation: color-change-2x 2s linear 0s infinite alternate both running;">
+      <form>
+        <p>
+          Amount of gas to fill:
+          <input type="text" id="gallonToPurchase" placeholder="gallons"> </p>
+        <p>Price of gas $ per gallon at desired station:
+          <br>A<input type="text" id="gasPriceA" placeholder="gas price per gallon at Station A">
+          B<input type="text" id="gasPriceB" placeholder="gas price per gallon at Station B">
+        </p>
+
+        <p>Distance to Desired Station:
+          <br>A<input type="text" id="aDistance" placeholder="Distance to station A">
+          B<input type="text" id="bDistance" placeholder="Distance to station B">
+        </p>
+
+        <p>Total cost to get there + purchase :
+          <br>A<input type="text" id="costToA" placeholder="Cost to station A">
+          B<input type="text" id="costToB" placeholder="Cost to station B">
+        </p>
+
+
+        <button type="button" id="calculateSavings">Show me where I should go!</button>
+        <!-- <h2> Savings:
+        Station <input type="text" id="stationResults" placeholder="X"> will save you $ <input type="text" id="Savings" placeholder="$$">
+        </h2> -->
+
+        <div id="Results">
+          <h1>Please input right values/unable to compute</h1> </div> </form> </div> </div> <div class="container">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+
+
+        <div class="container2">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+
+        <div class="container3">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+
+        <div class="container4">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+        <br>
+        <div class="input2" class="anim-object active" id="box-object-light" style="animation: color-change-2x 2s linear 0s infinite alternate both running;">
+<h3>Project done by:</h3>
+<h4>Alexander Hernandez, Ed Tan</h4>
+</div>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

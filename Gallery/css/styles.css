@@ -1,0 +1,159 @@
+html, body {
+  margin:0px;
+  padding: 0px;
+  background-color: black;
+}
+
+
+nav {
+    background-color: #34495e;
+    height: 80px;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        z-index: 999;
+}
+h1{
+  text-align: center;
+  color: white;
+  font-size: 5em;
+  margin-top: 40px;
+}
+#logo {height: 80px; margin-left: 20px;color: white}
+
+#back {
+  position:sticky;
+  z-index: :999;
+  color: white;
+}
+
+.wrapper {
+    padding: 50px 50px;
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+        margin-top: 10px;
+}
+
+.right {float: right !important;}
+/* Image zoom on hover + Overlay colour */
+.parent {
+    width: 45%;
+    margin: 20px;
+    height: 300px;
+    border: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* Several different images */
+.image0 {background-image: url(../images/0.png);}
+.image1 {background-image: url(../images/1.png);}
+.image2 {background-image: url(../images/2.png);}
+.image3 {background-image: url(../images/3.png);}
+.image4 {background-image: url(../images/4.png);}
+.image5 {background-image: url(../images/5.png);}
+.image6 {background-image: url(../images/6.png);}
+.image7 {background-image: url(../images/7.png);}
+.image8 {background-image: url(../images/8.png);}
+.image9 {background-image: url(../images/9.png);}
+
+div a {
+    display: none;
+    font-size: 35px;
+    color: red ;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    text-shadow: white;
+
+
+    /*text-decoration: none;*/
+}
+ 
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.5);
+    transform-origin: 50% 50%;
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 20px 0px}
+        .wrapper {padding: 20px 20px;}
+}
+
+#top{
+   position: sticky;
+   display: block;
+   top:0;
+   z-index: 1;
+}
+#top li{
+  List-style-type: none;
+  display: inline-block;
+  padding: 1.5em;
+  text-align: center;
+  z-index: 1;
+}
+
+
+#top ul{
+  background-color: black;
+  text-align: center;
+  position: sticky;
+  z-index: 1;
+}
+
+p{
+  padding: 1.5em;
+}
+
+
+
+
+.hello {display: none}

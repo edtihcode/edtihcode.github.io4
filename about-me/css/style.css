@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Open+Sans');
+
+html{
+  height: 100%;
+  background: url("img/galaxy.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+}
+
+#title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Crete Round', serif;
+}
+
+h2{
+  text-align: left;
+  font-family: 'Crete Round', serif;
+}
+nav{
+   position: sticky;
+   display: block;
+   top:0;
+}
+nav li{
+  List-style-type: none;
+  display: inline-block;
+  padding: 1.5em;
+  text-align: center;
+}
+
+nav ul{
+  background-color: rgb(106, 226, 226,.8);
+  text-align: center;
+  position: sticky;
+}
+body{
+  padding: 10px 30px 30px 30px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff; line-height: 1.3em;
+  background-color: rgba(0,0,0,.6);
+}
+
+ul{
+  margin: 0 0 1em 0;
+  list-style: none;
+  padding-left: 0;
+  }
+
+a{
+  text-decoration: underline;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+a:visited{color: #aaa;}
+
+a:hover{font-size: 1.5em;}
+
+a.tag >span {width: 200px; float: left;
+  color: rgba(255,255,255,.7);
+  padding: 10px 10px 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,.6);
+  position: absolute;
+  font-weight: bold;
+
+}
+
+a.tag:hover > span { background-color: rgba(0,0,0,.6);
+}
